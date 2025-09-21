@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>KubernetesCRDModelGen.Models.istio.io</PackageId>
+    <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.istio.io</RepositoryUrl>
+  </PropertyGroup>
+</Project>
