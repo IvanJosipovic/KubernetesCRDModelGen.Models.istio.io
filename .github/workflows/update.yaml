@@ -1,0 +1,15 @@
+name: Update
+
+on:
+  push:
+    branches:
+    - main
+  schedule:
+  - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflows/update-template.yaml@alpha
+    secrets:
+      GH_TOKEN: ${{ secrets.GHPAT }}

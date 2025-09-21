@@ -1,0 +1,19 @@
+name: CICD
+
+on:
+  push:
+    branches:
+    - 'main'
+    - 'alpha'
+    - 'beta'
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflows/cicd-template.yaml@alpha
+    secrets:
+      GH_TOKEN: ${{ secrets.GHPAT }}
+
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
