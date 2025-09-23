@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.istio.io</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.istio.io</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group istio.io</Description>
   </PropertyGroup>
 </Project>
