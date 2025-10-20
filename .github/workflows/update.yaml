@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-workflow:
-    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflows/update-template.yaml@alpha
+    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflows/update-template.yaml@main
     secrets:
-      GH_TOKEN: ${{ secrets.GHPAT }}
+      GH_TOKEN: ${{secrets.GHPAT}}
