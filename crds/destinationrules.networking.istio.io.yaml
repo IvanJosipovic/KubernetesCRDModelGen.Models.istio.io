@@ -7,8 +7,8 @@ metadata:
     app.kubernetes.io/instance: release-name
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: istio
-    app.kubernetes.io/version: 1.27.3
-    helm.sh/chart: base-1.27.3
+    app.kubernetes.io/version: 1.28.0
+    helm.sh/chart: base-1.28.0
   name: destinationrules.networking.istio.io
 spec:
   group: networking.istio.io
@@ -203,6 +203,20 @@ spec:
                                 httpCookie:
                                   description: Hash based on HTTP cookie.
                                   properties:
+                                    attributes:
+                                      description: Additional attributes for the cookie.
+                                      items:
+                                        properties:
+                                          name:
+                                            description: The name of the cookie attribute.
+                                            type: string
+                                          value:
+                                            description: The optional value of the cookie attribute.
+                                            type: string
+                                        required:
+                                        - name
+                                        type: object
+                                      type: array
                                     name:
                                       description: Name of the cookie.
                                       type: string
@@ -519,6 +533,20 @@ spec:
                                       httpCookie:
                                         description: Hash based on HTTP cookie.
                                         properties:
+                                          attributes:
+                                            description: Additional attributes for the cookie.
+                                            items:
+                                              properties:
+                                                name:
+                                                  description: The name of the cookie attribute.
+                                                  type: string
+                                                value:
+                                                  description: The optional value of the cookie attribute.
+                                                  type: string
+                                              required:
+                                              - name
+                                              type: object
+                                            type: array
                                           name:
                                             description: Name of the cookie.
                                             type: string
@@ -981,6 +1009,20 @@ spec:
                           httpCookie:
                             description: Hash based on HTTP cookie.
                             properties:
+                              attributes:
+                                description: Additional attributes for the cookie.
+                                items:
+                                  properties:
+                                    name:
+                                      description: The name of the cookie attribute.
+                                      type: string
+                                    value:
+                                      description: The optional value of the cookie attribute.
+                                      type: string
+                                  required:
+                                  - name
+                                  type: object
+                                type: array
                               name:
                                 description: Name of the cookie.
                                 type: string
@@ -1297,6 +1339,20 @@ spec:
                                 httpCookie:
                                   description: Hash based on HTTP cookie.
                                   properties:
+                                    attributes:
+                                      description: Additional attributes for the cookie.
+                                      items:
+                                        properties:
+                                          name:
+                                            description: The name of the cookie attribute.
+                                            type: string
+                                          value:
+                                            description: The optional value of the cookie attribute.
+                                            type: string
+                                        required:
+                                        - name
+                                        type: object
+                                      type: array
                                     name:
                                       description: Name of the cookie.
                                       type: string
@@ -1888,6 +1944,20 @@ spec:
                                 httpCookie:
                                   description: Hash based on HTTP cookie.
                                   properties:
+                                    attributes:
+                                      description: Additional attributes for the cookie.
+                                      items:
+                                        properties:
+                                          name:
+                                            description: The name of the cookie attribute.
+                                            type: string
+                                          value:
+                                            description: The optional value of the cookie attribute.
+                                            type: string
+                                        required:
+                                        - name
+                                        type: object
+                                      type: array
                                     name:
                                       description: Name of the cookie.
                                       type: string
@@ -2204,6 +2274,20 @@ spec:
                                       httpCookie:
                                         description: Hash based on HTTP cookie.
                                         properties:
+                                          attributes:
+                                            description: Additional attributes for the cookie.
+                                            items:
+                                              properties:
+                                                name:
+                                                  description: The name of the cookie attribute.
+                                                  type: string
+                                                value:
+                                                  description: The optional value of the cookie attribute.
+                                                  type: string
+                                              required:
+                                              - name
+                                              type: object
+                                            type: array
                                           name:
                                             description: Name of the cookie.
                                             type: string
@@ -2666,6 +2750,20 @@ spec:
                           httpCookie:
                             description: Hash based on HTTP cookie.
                             properties:
+                              attributes:
+                                description: Additional attributes for the cookie.
+                                items:
+                                  properties:
+                                    name:
+                                      description: The name of the cookie attribute.
+                                      type: string
+                                    value:
+                                      description: The optional value of the cookie attribute.
+                                      type: string
+                                  required:
+                                  - name
+                                  type: object
+                                type: array
                               name:
                                 description: Name of the cookie.
                                 type: string
@@ -2982,6 +3080,20 @@ spec:
                                 httpCookie:
                                   description: Hash based on HTTP cookie.
                                   properties:
+                                    attributes:
+                                      description: Additional attributes for the cookie.
+                                      items:
+                                        properties:
+                                          name:
+                                            description: The name of the cookie attribute.
+                                            type: string
+                                          value:
+                                            description: The optional value of the cookie attribute.
+                                            type: string
+                                        required:
+                                        - name
+                                        type: object
+                                      type: array
                                     name:
                                       description: Name of the cookie.
                                       type: string
@@ -3573,6 +3685,20 @@ spec:
                                 httpCookie:
                                   description: Hash based on HTTP cookie.
                                   properties:
+                                    attributes:
+                                      description: Additional attributes for the cookie.
+                                      items:
+                                        properties:
+                                          name:
+                                            description: The name of the cookie attribute.
+                                            type: string
+                                          value:
+                                            description: The optional value of the cookie attribute.
+                                            type: string
+                                        required:
+                                        - name
+                                        type: object
+                                      type: array
                                     name:
                                       description: Name of the cookie.
                                       type: string
@@ -3889,6 +4015,20 @@ spec:
                                       httpCookie:
                                         description: Hash based on HTTP cookie.
                                         properties:
+                                          attributes:
+                                            description: Additional attributes for the cookie.
+                                            items:
+                                              properties:
+                                                name:
+                                                  description: The name of the cookie attribute.
+                                                  type: string
+                                                value:
+                                                  description: The optional value of the cookie attribute.
+                                                  type: string
+                                              required:
+                                              - name
+                                              type: object
+                                            type: array
                                           name:
                                             description: Name of the cookie.
                                             type: string
@@ -4351,6 +4491,20 @@ spec:
                           httpCookie:
                             description: Hash based on HTTP cookie.
                             properties:
+                              attributes:
+                                description: Additional attributes for the cookie.
+                                items:
+                                  properties:
+                                    name:
+                                      description: The name of the cookie attribute.
+                                      type: string
+                                    value:
+                                      description: The optional value of the cookie attribute.
+                                      type: string
+                                  required:
+                                  - name
+                                  type: object
+                                type: array
                               name:
                                 description: Name of the cookie.
                                 type: string
@@ -4667,6 +4821,20 @@ spec:
                                 httpCookie:
                                   description: Hash based on HTTP cookie.
                                   properties:
+                                    attributes:
+                                      description: Additional attributes for the cookie.
+                                      items:
+                                        properties:
+                                          name:
+                                            description: The name of the cookie attribute.
+                                            type: string
+                                          value:
+                                            description: The optional value of the cookie attribute.
+                                            type: string
+                                        required:
+                                        - name
+                                        type: object
+                                      type: array
                                     name:
                                       description: Name of the cookie.
                                       type: string
