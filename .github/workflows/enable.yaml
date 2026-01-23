@@ -1,0 +1,14 @@
+name: Keepalive Workflow
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  keepalive-job:
+    name: Keepalive Workflow
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - uses: actions/checkout@main
+      - uses: ivanjosipovic/keepalive-workflow@v2
