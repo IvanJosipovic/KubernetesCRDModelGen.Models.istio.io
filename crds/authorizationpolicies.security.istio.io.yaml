@@ -13,10 +13,10 @@ metadata:
 spec:
   group: security.istio.io
   names:
+    kind: AuthorizationPolicy
     categories:
     - istio-io
     - security-istio-io
-    kind: AuthorizationPolicy
     listKind: AuthorizationPolicyList
     plural: authorizationpolicies
     shortNames:

@@ -13,10 +13,10 @@ metadata:
 spec:
   group: networking.istio.io
   names:
+    kind: ServiceEntry
     categories:
     - istio-io
     - networking-istio-io
-    kind: ServiceEntry
     listKind: ServiceEntryList
     plural: serviceentries
     shortNames:

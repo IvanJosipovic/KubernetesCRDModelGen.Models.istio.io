@@ -13,10 +13,10 @@ metadata:
 spec:
   group: security.istio.io
   names:
+    kind: PeerAuthentication
     categories:
     - istio-io
     - security-istio-io
-    kind: PeerAuthentication
     listKind: PeerAuthenticationList
     plural: peerauthentications
     shortNames:

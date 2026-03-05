@@ -13,10 +13,10 @@ metadata:
 spec:
   group: networking.istio.io
   names:
+    kind: Sidecar
     categories:
     - istio-io
     - networking-istio-io
-    kind: Sidecar
     listKind: SidecarList
     plural: sidecars
     singular: sidecar

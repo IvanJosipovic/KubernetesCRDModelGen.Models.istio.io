@@ -13,10 +13,10 @@ metadata:
 spec:
   group: networking.istio.io
   names:
+    kind: EnvoyFilter
     categories:
     - istio-io
     - networking-istio-io
-    kind: EnvoyFilter
     listKind: EnvoyFilterList
     plural: envoyfilters
     singular: envoyfilter

@@ -13,10 +13,10 @@ metadata:
 spec:
   group: networking.istio.io
   names:
+    kind: WorkloadGroup
     categories:
     - istio-io
     - networking-istio-io
-    kind: WorkloadGroup
     listKind: WorkloadGroupList
     plural: workloadgroups
     shortNames:

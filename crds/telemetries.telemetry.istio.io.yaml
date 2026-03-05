@@ -13,10 +13,10 @@ metadata:
 spec:
   group: telemetry.istio.io
   names:
+    kind: Telemetry
     categories:
     - istio-io
     - telemetry-istio-io
-    kind: Telemetry
     listKind: TelemetryList
     plural: telemetries
     shortNames:

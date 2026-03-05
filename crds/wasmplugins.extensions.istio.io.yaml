@@ -13,10 +13,10 @@ metadata:
 spec:
   group: extensions.istio.io
   names:
+    kind: WasmPlugin
     categories:
     - istio-io
     - extensions-istio-io
-    kind: WasmPlugin
     listKind: WasmPluginList
     plural: wasmplugins
     singular: wasmplugin
