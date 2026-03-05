@@ -13,10 +13,10 @@ metadata:
 spec:
   group: networking.istio.io
   names:
+    kind: DestinationRule
     categories:
     - istio-io
     - networking-istio-io
-    kind: DestinationRule
     listKind: DestinationRuleList
     plural: destinationrules
     shortNames:

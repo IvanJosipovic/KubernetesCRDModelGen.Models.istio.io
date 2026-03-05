@@ -13,10 +13,10 @@ metadata:
 spec:
   group: security.istio.io
   names:
+    kind: RequestAuthentication
     categories:
     - istio-io
     - security-istio-io
-    kind: RequestAuthentication
     listKind: RequestAuthenticationList
     plural: requestauthentications
     shortNames:

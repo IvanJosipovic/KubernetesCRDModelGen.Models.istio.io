@@ -13,10 +13,10 @@ metadata:
 spec:
   group: networking.istio.io
   names:
+    kind: Gateway
     categories:
     - istio-io
     - networking-istio-io
-    kind: Gateway
     listKind: GatewayList
     plural: gateways
     shortNames:
