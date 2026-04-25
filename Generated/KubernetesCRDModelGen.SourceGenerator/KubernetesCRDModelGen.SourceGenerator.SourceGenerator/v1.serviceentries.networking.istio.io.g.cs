@@ -1,0 +1,215 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.networking.istio.io;
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1ServiceEntryList : IKubernetesObject<V1ListMeta>, IItems<V1ServiceEntry>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "ServiceEntryList";
+    public const string KubeGroup = "networking.istio.io";
+    public const string KubePluralName = "serviceentries";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "networking.istio.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ServiceEntryList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1ServiceEntry objects.</summary>
+    [JsonPropertyName("items")]
+    public IList<V1ServiceEntry>? Items { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ServiceEntrySpecEndpoints
+{
+    /// <summary>Address associated with the network endpoint without the port.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>One or more labels associated with the endpoint.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>The locality associated with the endpoint.</summary>
+    [JsonPropertyName("locality")]
+    public string? Locality { get; set; }
+
+    /// <summary>Network enables Istio to group endpoints resident in the same L3 domain/network.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>Set of ports associated with the endpoint.</summary>
+    [JsonPropertyName("ports")]
+    public IDictionary<string, int>? Ports { get; set; }
+
+    /// <summary>The service account associated with the workload if a sidecar is present in the workload.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>The load balancing weight associated with the endpoint.</summary>
+    [JsonPropertyName("weight")]
+    public int? Weight { get; set; }
+}
+
+/// <summary>
+/// Specify whether the service should be considered external to the mesh or part of the mesh.
+/// 
+/// Valid Options: MESH_EXTERNAL, MESH_INTERNAL
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ServiceEntrySpecLocationEnum>))]
+public enum V1ServiceEntrySpecLocationEnum
+{
+    [EnumMember(Value = "MESH_EXTERNAL"), JsonStringEnumMemberName("MESH_EXTERNAL")]
+    MESHEXTERNAL,
+    [EnumMember(Value = "MESH_INTERNAL"), JsonStringEnumMemberName("MESH_INTERNAL")]
+    MESHINTERNAL
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ServiceEntrySpecPorts
+{
+    /// <summary>Label assigned to the port.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>A valid non-negative integer port number.</summary>
+    [JsonPropertyName("number")]
+    public required int Number { get; set; }
+
+    /// <summary>The protocol exposed on the port.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The port number on the endpoint where the traffic will be received.</summary>
+    [JsonPropertyName("targetPort")]
+    public int? TargetPort { get; set; }
+}
+
+/// <summary>
+/// Service resolution mode for the hosts.
+/// 
+/// Valid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN, DYNAMIC_DNS
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ServiceEntrySpecResolutionEnum>))]
+public enum V1ServiceEntrySpecResolutionEnum
+{
+    [EnumMember(Value = "NONE"), JsonStringEnumMemberName("NONE")]
+    NONE,
+    [EnumMember(Value = "STATIC"), JsonStringEnumMemberName("STATIC")]
+    STATIC,
+    [EnumMember(Value = "DNS"), JsonStringEnumMemberName("DNS")]
+    DNS,
+    [EnumMember(Value = "DNS_ROUND_ROBIN"), JsonStringEnumMemberName("DNS_ROUND_ROBIN")]
+    DNSROUNDROBIN,
+    [EnumMember(Value = "DYNAMIC_DNS"), JsonStringEnumMemberName("DYNAMIC_DNS")]
+    DYNAMICDNS
+}
+
+/// <summary>Applicable only for MESH_INTERNAL services.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ServiceEntrySpecWorkloadSelector
+{
+    /// <summary>One or more labels that indicate a specific set of pods/VMs on which the configuration should be applied.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+/// <summary>Configuration affecting service registry. See more details at: https://istio.io/docs/reference/config/networking/service-entry.html</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ServiceEntrySpec
+{
+    /// <summary>The virtual IP addresses associated with the service.</summary>
+    [JsonPropertyName("addresses")]
+    public IList<string>? Addresses { get; set; }
+
+    /// <summary>One or more endpoints associated with the service.</summary>
+    [JsonPropertyName("endpoints")]
+    public IList<V1ServiceEntrySpecEndpoints>? Endpoints { get; set; }
+
+    /// <summary>A list of namespaces to which this service is exported.</summary>
+    [JsonPropertyName("exportTo")]
+    public IList<string>? ExportTo { get; set; }
+
+    /// <summary>The hosts associated with the ServiceEntry.</summary>
+    [JsonPropertyName("hosts")]
+    public required IList<string> Hosts { get; set; }
+
+    /// <summary>
+    /// Specify whether the service should be considered external to the mesh or part of the mesh.
+    /// 
+    /// Valid Options: MESH_EXTERNAL, MESH_INTERNAL
+    /// </summary>
+    [JsonPropertyName("location")]
+    public V1ServiceEntrySpecLocationEnum? Location { get; set; }
+
+    /// <summary>The ports associated with the external service.</summary>
+    [JsonPropertyName("ports")]
+    public IList<V1ServiceEntrySpecPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// Service resolution mode for the hosts.
+    /// 
+    /// Valid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN, DYNAMIC_DNS
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1ServiceEntrySpecResolutionEnum? Resolution { get; set; }
+
+    /// <summary>If specified, the proxy will verify that the server certificate&apos;s subject alternate name matches one of the specified values.</summary>
+    [JsonPropertyName("subjectAltNames")]
+    public IList<string>? SubjectAltNames { get; set; }
+
+    /// <summary>Applicable only for MESH_INTERNAL services.</summary>
+    [JsonPropertyName("workloadSelector")]
+    public V1ServiceEntrySpecWorkloadSelector? WorkloadSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1ServiceEntry : IKubernetesObject<V1ObjectMeta>, ISpec<V1ServiceEntrySpec>, IStatus<JsonNode?>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "ServiceEntry";
+    public const string KubeGroup = "networking.istio.io";
+    public const string KubePluralName = "serviceentries";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "networking.istio.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ServiceEntry";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>Configuration affecting service registry. See more details at: https://istio.io/docs/reference/config/networking/service-entry.html</summary>
+    [JsonPropertyName("spec")]
+    public required V1ServiceEntrySpec Spec { get; set; }
+
+    [JsonPropertyName("status")]
+    public JsonNode? Status { get; set; }
+}
