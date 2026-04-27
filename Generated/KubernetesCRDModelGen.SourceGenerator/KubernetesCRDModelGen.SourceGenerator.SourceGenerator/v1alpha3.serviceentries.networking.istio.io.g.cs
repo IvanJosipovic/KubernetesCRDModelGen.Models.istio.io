@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networking.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha3ServiceEntryList : IKubernetesObject<V1ListMeta>, IItems<V1alpha3ServiceEntry>
@@ -32,10 +32,10 @@ public partial class V1alpha3ServiceEntryList : IKubernetesObject<V1ListMeta>, I
 
     /// <summary>List of V1alpha3ServiceEntry objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha3ServiceEntry>? Items { get; set; }
+    public required IList<V1alpha3ServiceEntry> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3ServiceEntrySpecEndpoints
 {
@@ -73,7 +73,7 @@ public partial class V1alpha3ServiceEntrySpecEndpoints
 /// 
 /// Valid Options: MESH_EXTERNAL, MESH_INTERNAL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3ServiceEntrySpecLocationEnum>))]
 public enum V1alpha3ServiceEntrySpecLocationEnum
 {
@@ -83,7 +83,7 @@ public enum V1alpha3ServiceEntrySpecLocationEnum
     MESHINTERNAL
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3ServiceEntrySpecPorts
 {
@@ -109,7 +109,7 @@ public partial class V1alpha3ServiceEntrySpecPorts
 /// 
 /// Valid Options: NONE, STATIC, DNS, DNS_ROUND_ROBIN, DYNAMIC_DNS
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3ServiceEntrySpecResolutionEnum>))]
 public enum V1alpha3ServiceEntrySpecResolutionEnum
 {
@@ -126,7 +126,7 @@ public enum V1alpha3ServiceEntrySpecResolutionEnum
 }
 
 /// <summary>Applicable only for MESH_INTERNAL services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3ServiceEntrySpecWorkloadSelector
 {
@@ -136,7 +136,7 @@ public partial class V1alpha3ServiceEntrySpecWorkloadSelector
 }
 
 /// <summary>Configuration affecting service registry. See more details at: https://istio.io/docs/reference/config/networking/service-entry.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3ServiceEntrySpec
 {
@@ -185,7 +185,7 @@ public partial class V1alpha3ServiceEntrySpec
     public V1alpha3ServiceEntrySpecWorkloadSelector? WorkloadSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha3ServiceEntry : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha3ServiceEntrySpec>, IStatus<JsonNode?>

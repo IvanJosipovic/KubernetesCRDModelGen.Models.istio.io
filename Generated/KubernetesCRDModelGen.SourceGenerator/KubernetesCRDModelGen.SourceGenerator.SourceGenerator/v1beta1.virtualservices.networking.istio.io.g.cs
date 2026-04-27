@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networking.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualService>
@@ -32,10 +32,10 @@ public partial class V1beta1VirtualServiceList : IKubernetesObject<V1ListMeta>, 
 
     /// <summary>List of V1beta1VirtualService objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1VirtualService>? Items { get; set; }
+    public required IList<V1beta1VirtualService> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpCorsPolicyAllowOrigins
 {
@@ -55,7 +55,7 @@ public partial class V1beta1VirtualServiceSpecHttpCorsPolicyAllowOrigins
 /// 
 /// Valid Options: FORWARD, IGNORE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecHttpCorsPolicyUnmatchedPreflightsEnum>))]
 public enum V1beta1VirtualServiceSpecHttpCorsPolicyUnmatchedPreflightsEnum
 {
@@ -68,7 +68,7 @@ public enum V1beta1VirtualServiceSpecHttpCorsPolicyUnmatchedPreflightsEnum
 }
 
 /// <summary>Cross-Origin Resource Sharing policy (CORS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpCorsPolicy
 {
@@ -109,7 +109,7 @@ public partial class V1beta1VirtualServiceSpecHttpCorsPolicy
 }
 
 /// <summary>Delegate is used to specify the particular VirtualService which can be used to define delegate HTTPRoute.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpDelegate
 {
@@ -123,7 +123,7 @@ public partial class V1beta1VirtualServiceSpecHttpDelegate
 }
 
 /// <summary>Specifies the content of the response body.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpDirectResponseBody
 {
@@ -136,7 +136,7 @@ public partial class V1beta1VirtualServiceSpecHttpDirectResponseBody
 }
 
 /// <summary>A HTTP rule can either return a direct_response, redirect or forward (default) traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpDirectResponse
 {
@@ -150,7 +150,7 @@ public partial class V1beta1VirtualServiceSpecHttpDirectResponse
 }
 
 /// <summary>Percentage of requests to be aborted with the error code provided.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpFaultAbortPercentage
 {
@@ -159,7 +159,7 @@ public partial class V1beta1VirtualServiceSpecHttpFaultAbortPercentage
 }
 
 /// <summary>Abort Http request attempts and return error codes back to downstream service, giving the impression that the upstream service is faulty.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpFaultAbort
 {
@@ -180,7 +180,7 @@ public partial class V1beta1VirtualServiceSpecHttpFaultAbort
 }
 
 /// <summary>Percentage of requests on which the delay will be injected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpFaultDelayPercentage
 {
@@ -189,7 +189,7 @@ public partial class V1beta1VirtualServiceSpecHttpFaultDelayPercentage
 }
 
 /// <summary>Delay requests before forwarding, emulating various failures such as network issues, overloaded upstream service, etc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpFaultDelay
 {
@@ -210,7 +210,7 @@ public partial class V1beta1VirtualServiceSpecHttpFaultDelay
 }
 
 /// <summary>Fault injection policy to apply on HTTP traffic at the client side.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpFault
 {
@@ -223,7 +223,7 @@ public partial class V1beta1VirtualServiceSpecHttpFault
     public V1beta1VirtualServiceSpecHttpFaultDelay? Delay { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpHeadersRequest
 {
@@ -237,7 +237,7 @@ public partial class V1beta1VirtualServiceSpecHttpHeadersRequest
     public IDictionary<string, string>? Set { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpHeadersResponse
 {
@@ -251,7 +251,7 @@ public partial class V1beta1VirtualServiceSpecHttpHeadersResponse
     public IDictionary<string, string>? Set { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpHeaders
 {
@@ -263,7 +263,7 @@ public partial class V1beta1VirtualServiceSpecHttpHeaders
 }
 
 /// <summary>HTTP Authority values are case-sensitive and formatted as follows: - `exact: &quot;value&quot;` for exact string match - `prefix: &quot;value&quot;` for prefix-based match - `regex: &quot;value&quot;` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchAuthority
 {
@@ -278,7 +278,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchAuthority
     public string? Regex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchHeaders
 {
@@ -294,7 +294,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchHeaders
 }
 
 /// <summary>HTTP Method values are case-sensitive and formatted as follows: - `exact: &quot;value&quot;` for exact string match - `prefix: &quot;value&quot;` for prefix-based match - `regex: &quot;value&quot;` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchMethod
 {
@@ -309,7 +309,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchMethod
     public string? Regex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchQueryParams
 {
@@ -325,7 +325,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchQueryParams
 }
 
 /// <summary>URI Scheme values are case-sensitive and formatted as follows: - `exact: &quot;value&quot;` for exact string match - `prefix: &quot;value&quot;` for prefix-based match - `regex: &quot;value&quot;` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchScheme
 {
@@ -341,7 +341,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchScheme
 }
 
 /// <summary>URI to match values are case-sensitive and formatted as follows: - `exact: &quot;value&quot;` for exact string match - `prefix: &quot;value&quot;` for prefix-based match - `regex: &quot;value&quot;` for [RE2 style regex-based match](https://github.com/google/re2/wiki/Syntax).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchUri
 {
@@ -356,7 +356,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchUri
     public string? Regex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatchWithoutHeaders
 {
@@ -371,7 +371,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatchWithoutHeaders
     public string? Regex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMatch
 {
@@ -433,7 +433,7 @@ public partial class V1beta1VirtualServiceSpecHttpMatch
 }
 
 /// <summary>Specifies the port on the host that is being addressed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirrorPort
 {
@@ -442,7 +442,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirrorPort
 }
 
 /// <summary>Mirror HTTP traffic to a another destination in addition to forwarding the requests to the intended destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirror
 {
@@ -460,7 +460,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirror
 }
 
 /// <summary>Percentage of the traffic to be mirrored by the `mirror` field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirrorPercentage
 {
@@ -469,7 +469,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirrorPercentage
 }
 
 /// <summary>Specifies the port on the host that is being addressed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirrorsDestinationPort
 {
@@ -478,7 +478,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirrorsDestinationPort
 }
 
 /// <summary>Destination specifies the target of the mirror operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirrorsDestination
 {
@@ -496,7 +496,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirrorsDestination
 }
 
 /// <summary>Percentage of the traffic to be mirrored by the `destination` field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirrorsPercentage
 {
@@ -504,7 +504,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirrorsPercentage
     public double? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpMirrors
 {
@@ -522,7 +522,7 @@ public partial class V1beta1VirtualServiceSpecHttpMirrors
 /// 
 /// Valid Options: FROM_PROTOCOL_DEFAULT, FROM_REQUEST_PORT
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecHttpRedirectDerivePortEnum>))]
 public enum V1beta1VirtualServiceSpecHttpRedirectDerivePortEnum
 {
@@ -533,7 +533,7 @@ public enum V1beta1VirtualServiceSpecHttpRedirectDerivePortEnum
 }
 
 /// <summary>A HTTP rule can either return a direct_response, redirect or forward (default) traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRedirect
 {
@@ -567,7 +567,7 @@ public partial class V1beta1VirtualServiceSpecHttpRedirect
 }
 
 /// <summary>Retry policy for HTTP requests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRetries
 {
@@ -597,7 +597,7 @@ public partial class V1beta1VirtualServiceSpecHttpRetries
 }
 
 /// <summary>rewrite the path portion of the URI with the specified regex.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRewriteUriRegexRewrite
 {
@@ -611,7 +611,7 @@ public partial class V1beta1VirtualServiceSpecHttpRewriteUriRegexRewrite
 }
 
 /// <summary>Rewrite HTTP URIs and Authority headers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRewrite
 {
@@ -629,7 +629,7 @@ public partial class V1beta1VirtualServiceSpecHttpRewrite
 }
 
 /// <summary>Specifies the port on the host that is being addressed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRouteDestinationPort
 {
@@ -638,7 +638,7 @@ public partial class V1beta1VirtualServiceSpecHttpRouteDestinationPort
 }
 
 /// <summary>Destination uniquely identifies the instances of a service to which the request/connection should be forwarded to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRouteDestination
 {
@@ -655,7 +655,7 @@ public partial class V1beta1VirtualServiceSpecHttpRouteDestination
     public string? Subset { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRouteHeadersRequest
 {
@@ -669,7 +669,7 @@ public partial class V1beta1VirtualServiceSpecHttpRouteHeadersRequest
     public IDictionary<string, string>? Set { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRouteHeadersResponse
 {
@@ -683,7 +683,7 @@ public partial class V1beta1VirtualServiceSpecHttpRouteHeadersResponse
     public IDictionary<string, string>? Set { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRouteHeaders
 {
@@ -694,7 +694,7 @@ public partial class V1beta1VirtualServiceSpecHttpRouteHeaders
     public V1beta1VirtualServiceSpecHttpRouteHeadersResponse? Response { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttpRoute
 {
@@ -710,7 +710,7 @@ public partial class V1beta1VirtualServiceSpecHttpRoute
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecHttp
 {
@@ -780,7 +780,7 @@ public partial class V1beta1VirtualServiceSpecHttp
     public string? Timeout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTcpMatch
 {
@@ -809,7 +809,7 @@ public partial class V1beta1VirtualServiceSpecTcpMatch
 }
 
 /// <summary>Specifies the port on the host that is being addressed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTcpRouteDestinationPort
 {
@@ -818,7 +818,7 @@ public partial class V1beta1VirtualServiceSpecTcpRouteDestinationPort
 }
 
 /// <summary>Destination uniquely identifies the instances of a service to which the request/connection should be forwarded to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTcpRouteDestination
 {
@@ -835,7 +835,7 @@ public partial class V1beta1VirtualServiceSpecTcpRouteDestination
     public string? Subset { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTcpRoute
 {
@@ -848,7 +848,7 @@ public partial class V1beta1VirtualServiceSpecTcpRoute
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTcp
 {
@@ -861,7 +861,7 @@ public partial class V1beta1VirtualServiceSpecTcp
     public IList<V1beta1VirtualServiceSpecTcpRoute>? Route { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTlsMatch
 {
@@ -891,7 +891,7 @@ public partial class V1beta1VirtualServiceSpecTlsMatch
 }
 
 /// <summary>Specifies the port on the host that is being addressed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTlsRouteDestinationPort
 {
@@ -900,7 +900,7 @@ public partial class V1beta1VirtualServiceSpecTlsRouteDestinationPort
 }
 
 /// <summary>Destination uniquely identifies the instances of a service to which the request/connection should be forwarded to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTlsRouteDestination
 {
@@ -917,7 +917,7 @@ public partial class V1beta1VirtualServiceSpecTlsRouteDestination
     public string? Subset { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTlsRoute
 {
@@ -930,7 +930,7 @@ public partial class V1beta1VirtualServiceSpecTlsRoute
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecTls
 {
@@ -944,7 +944,7 @@ public partial class V1beta1VirtualServiceSpecTls
 }
 
 /// <summary>Configuration affecting label/content routing, sni routing, etc. See more details at: https://istio.io/docs/reference/config/networking/virtual-service.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpec
 {
@@ -973,7 +973,7 @@ public partial class V1beta1VirtualServiceSpec
     public IList<V1beta1VirtualServiceSpecTls>? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualServiceSpec?>, IStatus<JsonNode?>

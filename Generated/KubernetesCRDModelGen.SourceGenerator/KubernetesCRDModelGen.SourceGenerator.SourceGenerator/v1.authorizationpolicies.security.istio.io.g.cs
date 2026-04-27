@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.security.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1AuthorizationPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1AuthorizationPolicy>
@@ -32,7 +32,7 @@ public partial class V1AuthorizationPolicyList : IKubernetesObject<V1ListMeta>, 
 
     /// <summary>List of V1AuthorizationPolicy objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1AuthorizationPolicy>? Items { get; set; }
+    public required IList<V1AuthorizationPolicy> Items { get; set; }
 }
 
 /// <summary>
@@ -40,7 +40,7 @@ public partial class V1AuthorizationPolicyList : IKubernetesObject<V1ListMeta>, 
 /// 
 /// Valid Options: ALLOW, DENY, AUDIT, CUSTOM
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1AuthorizationPolicySpecActionEnum>))]
 public enum V1AuthorizationPolicySpecActionEnum
 {
@@ -55,7 +55,7 @@ public enum V1AuthorizationPolicySpecActionEnum
 }
 
 /// <summary>Specifies detailed configuration of the CUSTOM action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecProvider
 {
@@ -65,7 +65,7 @@ public partial class V1AuthorizationPolicySpecProvider
 }
 
 /// <summary>Source specifies the source of a request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecRulesFromSource
 {
@@ -118,7 +118,7 @@ public partial class V1AuthorizationPolicySpecRulesFromSource
     public IList<string>? ServiceAccounts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecRulesFrom
 {
@@ -128,7 +128,7 @@ public partial class V1AuthorizationPolicySpecRulesFrom
 }
 
 /// <summary>Operation specifies the operation of a request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecRulesToOperation
 {
@@ -165,7 +165,7 @@ public partial class V1AuthorizationPolicySpecRulesToOperation
     public IList<string>? Ports { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecRulesTo
 {
@@ -174,7 +174,7 @@ public partial class V1AuthorizationPolicySpecRulesTo
     public V1AuthorizationPolicySpecRulesToOperation? Operation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecRulesWhen
 {
@@ -191,7 +191,7 @@ public partial class V1AuthorizationPolicySpecRulesWhen
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecRules
 {
@@ -209,7 +209,7 @@ public partial class V1AuthorizationPolicySpecRules
 }
 
 /// <summary>Optional.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecSelector
 {
@@ -218,7 +218,7 @@ public partial class V1AuthorizationPolicySpecSelector
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecTargetRef
 {
@@ -239,7 +239,7 @@ public partial class V1AuthorizationPolicySpecTargetRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpecTargetRefs
 {
@@ -261,7 +261,7 @@ public partial class V1AuthorizationPolicySpecTargetRefs
 }
 
 /// <summary>Configuration for access control on workloads. See more details at: https://istio.io/docs/reference/config/security/authorization-policy.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1AuthorizationPolicySpec
 {
@@ -293,7 +293,7 @@ public partial class V1AuthorizationPolicySpec
     public IList<V1AuthorizationPolicySpecTargetRefs>? TargetRefs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1AuthorizationPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1AuthorizationPolicySpec?>, IStatus<JsonNode?>
