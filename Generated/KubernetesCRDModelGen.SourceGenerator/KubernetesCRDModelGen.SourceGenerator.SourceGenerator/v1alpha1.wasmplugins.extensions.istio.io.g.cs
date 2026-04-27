@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.extensions.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WasmPluginList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1WasmPlugin>
@@ -32,7 +32,7 @@ public partial class V1alpha1WasmPluginList : IKubernetesObject<V1ListMeta>, IIt
 
     /// <summary>List of V1alpha1WasmPlugin objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1WasmPlugin>? Items { get; set; }
+    public required IList<V1alpha1WasmPlugin> Items { get; set; }
 }
 
 /// <summary>
@@ -40,7 +40,7 @@ public partial class V1alpha1WasmPluginList : IKubernetesObject<V1ListMeta>, IIt
 /// 
 /// Valid Options: FAIL_CLOSE, FAIL_OPEN, FAIL_RELOAD
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WasmPluginSpecFailStrategyEnum>))]
 public enum V1alpha1WasmPluginSpecFailStrategyEnum
 {
@@ -57,7 +57,7 @@ public enum V1alpha1WasmPluginSpecFailStrategyEnum
 /// 
 /// Valid Options: IfNotPresent, Always
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WasmPluginSpecImagePullPolicyEnum>))]
 public enum V1alpha1WasmPluginSpecImagePullPolicyEnum
 {
@@ -74,7 +74,7 @@ public enum V1alpha1WasmPluginSpecImagePullPolicyEnum
 /// 
 /// Valid Options: CLIENT, SERVER, CLIENT_AND_SERVER
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WasmPluginSpecMatchModeEnum>))]
 public enum V1alpha1WasmPluginSpecMatchModeEnum
 {
@@ -88,7 +88,7 @@ public enum V1alpha1WasmPluginSpecMatchModeEnum
     CLIENTANDSERVER
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecMatchPorts
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1WasmPluginSpecMatchPorts
     public required int Number { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecMatch
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1WasmPluginSpecMatch
 /// 
 /// Valid Options: AUTHN, AUTHZ, STATS
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WasmPluginSpecPhaseEnum>))]
 public enum V1alpha1WasmPluginSpecPhaseEnum
 {
@@ -133,7 +133,7 @@ public enum V1alpha1WasmPluginSpecPhaseEnum
 }
 
 /// <summary>Criteria used to select the specific set of pods/VMs on which this plugin configuration should be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecSelector
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1WasmPluginSpecSelector
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecTargetRef
 {
@@ -163,7 +163,7 @@ public partial class V1alpha1WasmPluginSpecTargetRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecTargetRefs
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1WasmPluginSpecTargetRefs
 /// 
 /// Valid Options: HTTP, NETWORK
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WasmPluginSpecTypeEnum>))]
 public enum V1alpha1WasmPluginSpecTypeEnum
 {
@@ -206,7 +206,7 @@ public enum V1alpha1WasmPluginSpecTypeEnum
 /// 
 /// Valid Options: INLINE, HOST
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WasmPluginSpecVmConfigEnvValueFromEnum>))]
 public enum V1alpha1WasmPluginSpecVmConfigEnvValueFromEnum
 {
@@ -216,7 +216,7 @@ public enum V1alpha1WasmPluginSpecVmConfigEnvValueFromEnum
     HOST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecVmConfigEnv
 {
@@ -238,7 +238,7 @@ public partial class V1alpha1WasmPluginSpecVmConfigEnv
 }
 
 /// <summary>Configuration for a Wasm VM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpecVmConfig
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1WasmPluginSpecVmConfig
 }
 
 /// <summary>Extend the functionality provided by the Istio proxy through WebAssembly filters. See more details at: https://istio.io/docs/reference/config/proxy_extensions/wasm-plugin.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WasmPluginSpec
 {
@@ -331,7 +331,7 @@ public partial class V1alpha1WasmPluginSpec
     public V1alpha1WasmPluginSpecVmConfig? VmConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WasmPlugin : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1WasmPluginSpec>, IStatus<JsonNode?>

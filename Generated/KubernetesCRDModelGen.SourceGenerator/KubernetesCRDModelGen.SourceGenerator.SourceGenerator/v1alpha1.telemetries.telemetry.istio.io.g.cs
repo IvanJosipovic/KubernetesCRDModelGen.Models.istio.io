@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.telemetry.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TelemetryList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Telemetry>
@@ -32,11 +32,11 @@ public partial class V1alpha1TelemetryList : IKubernetesObject<V1ListMeta>, IIte
 
     /// <summary>List of V1alpha1Telemetry objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1Telemetry>? Items { get; set; }
+    public required IList<V1alpha1Telemetry> Items { get; set; }
 }
 
 /// <summary>Optional.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecAccessLoggingFilter
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1TelemetrySpecAccessLoggingFilter
 /// 
 /// Valid Options: CLIENT_AND_SERVER, CLIENT, SERVER
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TelemetrySpecAccessLoggingMatchModeEnum>))]
 public enum V1alpha1TelemetrySpecAccessLoggingMatchModeEnum
 {
@@ -63,7 +63,7 @@ public enum V1alpha1TelemetrySpecAccessLoggingMatchModeEnum
 }
 
 /// <summary>Allows tailoring of logging behavior to specific conditions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecAccessLoggingMatch
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1TelemetrySpecAccessLoggingMatch
     public V1alpha1TelemetrySpecAccessLoggingMatchModeEnum? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecAccessLoggingProviders
 {
@@ -85,7 +85,7 @@ public partial class V1alpha1TelemetrySpecAccessLoggingProviders
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecAccessLogging
 {
@@ -111,7 +111,7 @@ public partial class V1alpha1TelemetrySpecAccessLogging
 /// 
 /// Valid Options: ALL_METRICS, REQUEST_COUNT, REQUEST_DURATION, REQUEST_SIZE, RESPONSE_SIZE, TCP_OPENED_CONNECTIONS, TCP_CLOSED_CONNECTIONS, TCP_SENT_BYTES, TCP_RECEIVED_BYTES, GRPC_REQUEST_MESSAGES, GRPC_RESPONSE_MESSAGES
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TelemetrySpecMetricsOverridesMatchMetricEnum>))]
 public enum V1alpha1TelemetrySpecMetricsOverridesMatchMetricEnum
 {
@@ -144,7 +144,7 @@ public enum V1alpha1TelemetrySpecMetricsOverridesMatchMetricEnum
 /// 
 /// Valid Options: CLIENT_AND_SERVER, CLIENT, SERVER
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TelemetrySpecMetricsOverridesMatchModeEnum>))]
 public enum V1alpha1TelemetrySpecMetricsOverridesMatchModeEnum
 {
@@ -157,7 +157,7 @@ public enum V1alpha1TelemetrySpecMetricsOverridesMatchModeEnum
 }
 
 /// <summary>Match allows providing the scope of the override.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecMetricsOverridesMatch
 {
@@ -187,7 +187,7 @@ public partial class V1alpha1TelemetrySpecMetricsOverridesMatch
 /// 
 /// Valid Options: UPSERT, REMOVE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TelemetrySpecMetricsOverridesTagOverridesOperationEnum>))]
 public enum V1alpha1TelemetrySpecMetricsOverridesTagOverridesOperationEnum
 {
@@ -197,7 +197,7 @@ public enum V1alpha1TelemetrySpecMetricsOverridesTagOverridesOperationEnum
     REMOVE
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecMetricsOverridesTagOverrides
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1TelemetrySpecMetricsOverridesTagOverrides
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecMetricsOverrides
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1TelemetrySpecMetricsOverrides
     public IDictionary<string, V1alpha1TelemetrySpecMetricsOverridesTagOverrides>? TagOverrides { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecMetricsProviders
 {
@@ -240,7 +240,7 @@ public partial class V1alpha1TelemetrySpecMetricsProviders
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecMetrics
 {
@@ -258,7 +258,7 @@ public partial class V1alpha1TelemetrySpecMetrics
 }
 
 /// <summary>Optional.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecSelector
 {
@@ -267,7 +267,7 @@ public partial class V1alpha1TelemetrySpecSelector
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTargetRef
 {
@@ -288,7 +288,7 @@ public partial class V1alpha1TelemetrySpecTargetRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTargetRefs
 {
@@ -310,7 +310,7 @@ public partial class V1alpha1TelemetrySpecTargetRefs
 }
 
 /// <summary>Environment adds the value of an environment variable to each span.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingCustomTagsEnvironment
 {
@@ -324,7 +324,7 @@ public partial class V1alpha1TelemetrySpecTracingCustomTagsEnvironment
 }
 
 /// <summary>Formatter adds the value of access logging substitution formatter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingCustomTagsFormatter
 {
@@ -334,7 +334,7 @@ public partial class V1alpha1TelemetrySpecTracingCustomTagsFormatter
 }
 
 /// <summary>RequestHeader adds the value of an header from the request to each span.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingCustomTagsHeader
 {
@@ -348,7 +348,7 @@ public partial class V1alpha1TelemetrySpecTracingCustomTagsHeader
 }
 
 /// <summary>Literal adds the same, hard-coded value to each span.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingCustomTagsLiteral
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1TelemetrySpecTracingCustomTagsLiteral
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingCustomTags
 {
@@ -383,7 +383,7 @@ public partial class V1alpha1TelemetrySpecTracingCustomTags
 /// 
 /// Valid Options: CLIENT_AND_SERVER, CLIENT, SERVER
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TelemetrySpecTracingMatchModeEnum>))]
 public enum V1alpha1TelemetrySpecTracingMatchModeEnum
 {
@@ -396,7 +396,7 @@ public enum V1alpha1TelemetrySpecTracingMatchModeEnum
 }
 
 /// <summary>Allows tailoring of behavior to specific conditions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingMatch
 {
@@ -409,7 +409,7 @@ public partial class V1alpha1TelemetrySpecTracingMatch
     public V1alpha1TelemetrySpecTracingMatchModeEnum? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracingProviders
 {
@@ -418,7 +418,7 @@ public partial class V1alpha1TelemetrySpecTracingProviders
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpecTracing
 {
@@ -451,7 +451,7 @@ public partial class V1alpha1TelemetrySpecTracing
 }
 
 /// <summary>Telemetry configuration for workloads. See more details at: https://istio.io/docs/reference/config/telemetry.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TelemetrySpec
 {
@@ -479,7 +479,7 @@ public partial class V1alpha1TelemetrySpec
     public IList<V1alpha1TelemetrySpecTracing>? Tracing { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Telemetry : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TelemetrySpec?>, IStatus<JsonNode?>
