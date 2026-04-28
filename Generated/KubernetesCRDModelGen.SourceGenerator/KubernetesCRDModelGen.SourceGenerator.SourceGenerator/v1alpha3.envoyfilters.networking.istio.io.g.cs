@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networking.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha3EnvoyFilterList : IKubernetesObject<V1ListMeta>, IItems<V1alpha3EnvoyFilter>
@@ -40,7 +40,7 @@ public partial class V1alpha3EnvoyFilterList : IKubernetesObject<V1ListMeta>, II
 /// 
 /// Valid Options: LISTENER, FILTER_CHAIN, NETWORK_FILTER, HTTP_FILTER, ROUTE_CONFIGURATION, VIRTUAL_HOST, HTTP_ROUTE, CLUSTER, EXTENSION_CONFIG, BOOTSTRAP, LISTENER_FILTER
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3EnvoyFilterSpecConfigPatchesApplyToEnum>))]
 public enum V1alpha3EnvoyFilterSpecConfigPatchesApplyToEnum
 {
@@ -71,7 +71,7 @@ public enum V1alpha3EnvoyFilterSpecConfigPatchesApplyToEnum
 }
 
 /// <summary>Match on envoy cluster attributes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchCluster
 {
@@ -97,7 +97,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchCluster
 /// 
 /// Valid Options: ANY, SIDECAR_INBOUND, SIDECAR_OUTBOUND, GATEWAY, WAYPOINT
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3EnvoyFilterSpecConfigPatchesMatchContextEnum>))]
 public enum V1alpha3EnvoyFilterSpecConfigPatchesMatchContextEnum
 {
@@ -114,7 +114,7 @@ public enum V1alpha3EnvoyFilterSpecConfigPatchesMatchContextEnum
 }
 
 /// <summary>The next level filter within this filter to match upon.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListenerFilterChainFilterSubFilter
 {
@@ -124,7 +124,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListenerFilterChai
 }
 
 /// <summary>The name of a specific filter to apply the patch to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListenerFilterChainFilter
 {
@@ -138,7 +138,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListenerFilterChai
 }
 
 /// <summary>Match a specific filter chain in a listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListenerFilterChain
 {
@@ -168,7 +168,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListenerFilterChai
 }
 
 /// <summary>Match on envoy listener attributes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListener
 {
@@ -193,7 +193,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchListener
 }
 
 /// <summary>Match on properties associated with a proxy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchProxy
 {
@@ -211,7 +211,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchProxy
 /// 
 /// Valid Options: ANY, ROUTE, REDIRECT, DIRECT_RESPONSE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfigurationVhostRouteActionEnum>))]
 public enum V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfigurationVhostRouteActionEnum
 {
@@ -226,7 +226,7 @@ public enum V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfigurationVhostRout
 }
 
 /// <summary>Match a specific route within the virtual host.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfigurationVhostRoute
 {
@@ -244,7 +244,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfiguration
 }
 
 /// <summary>Match a specific virtual host in a route configuration and apply the patch to the virtual host.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfigurationVhost
 {
@@ -262,7 +262,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfiguration
 }
 
 /// <summary>Match on envoy HTTP route configuration attributes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfiguration
 {
@@ -288,7 +288,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchRouteConfiguration
 }
 
 /// <summary>The next level filter within this filter to match on.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypointFilterSubFilter
 {
@@ -298,7 +298,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypointFilterSubF
 }
 
 /// <summary>The name of a specific filter to apply the patch to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypointFilter
 {
@@ -312,7 +312,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypointFilter
 }
 
 /// <summary>Match a specific route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypointRoute
 {
@@ -321,7 +321,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypointRoute
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypoint
 {
@@ -339,7 +339,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatchWaypoint
 }
 
 /// <summary>Match on listener/route configuration/cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatch
 {
@@ -376,7 +376,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesMatch
 /// 
 /// Valid Options: AUTHN, AUTHZ, STATS
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3EnvoyFilterSpecConfigPatchesPatchFilterClassEnum>))]
 public enum V1alpha3EnvoyFilterSpecConfigPatchesPatchFilterClassEnum
 {
@@ -395,7 +395,7 @@ public enum V1alpha3EnvoyFilterSpecConfigPatchesPatchFilterClassEnum
 /// 
 /// Valid Options: MERGE, ADD, REMOVE, INSERT_BEFORE, INSERT_AFTER, INSERT_FIRST, REPLACE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3EnvoyFilterSpecConfigPatchesPatchOperationEnum>))]
 public enum V1alpha3EnvoyFilterSpecConfigPatchesPatchOperationEnum
 {
@@ -418,7 +418,7 @@ public enum V1alpha3EnvoyFilterSpecConfigPatchesPatchOperationEnum
 }
 
 /// <summary>The patch to apply along with the operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatchesPatch
 {
@@ -443,7 +443,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatchesPatch
     public JsonNode? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecConfigPatches
 {
@@ -464,7 +464,7 @@ public partial class V1alpha3EnvoyFilterSpecConfigPatches
     public V1alpha3EnvoyFilterSpecConfigPatchesPatch? Patch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecTargetRefs
 {
@@ -486,7 +486,7 @@ public partial class V1alpha3EnvoyFilterSpecTargetRefs
 }
 
 /// <summary>Criteria used to select the specific set of pods/VMs on which this patch configuration should be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpecWorkloadSelector
 {
@@ -496,7 +496,7 @@ public partial class V1alpha3EnvoyFilterSpecWorkloadSelector
 }
 
 /// <summary>Customizing Envoy configuration generated by Istio. See more details at: https://istio.io/docs/reference/config/networking/envoy-filter.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3EnvoyFilterSpec
 {
@@ -517,7 +517,7 @@ public partial class V1alpha3EnvoyFilterSpec
     public V1alpha3EnvoyFilterSpecWorkloadSelector? WorkloadSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha3EnvoyFilter : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha3EnvoyFilterSpec?>, IStatus<JsonNode?>
