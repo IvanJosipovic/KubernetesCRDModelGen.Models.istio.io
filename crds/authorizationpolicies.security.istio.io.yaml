@@ -7,8 +7,8 @@ metadata:
     app.kubernetes.io/instance: release-name
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: istio
-    app.kubernetes.io/version: 1.29.2
-    helm.sh/chart: base-1.29.2
+    app.kubernetes.io/version: 1.30.0
+    helm.sh/chart: base-1.30.0
   name: authorizationpolicies.security.istio.io
 spec:
   group: security.istio.io
@@ -118,6 +118,11 @@ spec:
                                   type: string
                                 maxItems: 16
                                 type: array
+                              notTrustDomains:
+                                description: Optional.
+                                items:
+                                  type: string
+                                type: array
                               principals:
                                 description: Optional.
                                 items:
@@ -139,6 +144,11 @@ spec:
                                   maxLength: 320
                                   type: string
                                 maxItems: 16
+                                type: array
+                              trustDomains:
+                                description: Optional.
+                                items:
+                                  type: string
                                 type: array
                             type: object
                             x-kubernetes-validations:
@@ -475,6 +485,11 @@ spec:
                                   type: string
                                 maxItems: 16
                                 type: array
+                              notTrustDomains:
+                                description: Optional.
+                                items:
+                                  type: string
+                                type: array
                               principals:
                                 description: Optional.
                                 items:
@@ -496,6 +511,11 @@ spec:
                                   maxLength: 320
                                   type: string
                                 maxItems: 16
+                                type: array
+                              trustDomains:
+                                description: Optional.
+                                items:
+                                  type: string
                                 type: array
                             type: object
                             x-kubernetes-validations:

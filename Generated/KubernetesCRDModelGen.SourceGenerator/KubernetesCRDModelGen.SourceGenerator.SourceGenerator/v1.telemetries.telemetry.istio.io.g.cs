@@ -426,6 +426,10 @@ public partial class V1TelemetrySpecTracing
     [JsonPropertyName("customTags")]
     public IDictionary<string, V1TelemetrySpecTracingCustomTags>? CustomTags { get; set; }
 
+    /// <summary>Controls whether trace context headers (e.g., `traceparent`/`tracestate` for W3C, `X-B3-*` for Zipkin) are propagated in forwarded requests.</summary>
+    [JsonPropertyName("disableContextPropagation")]
+    public bool? DisableContextPropagation { get; set; }
+
     /// <summary>Controls span reporting.</summary>
     [JsonPropertyName("disableSpanReporting")]
     public bool? DisableSpanReporting { get; set; }

@@ -102,6 +102,10 @@ public partial class V1AuthorizationPolicySpecRulesFromSource
     public IList<string>? NotServiceAccounts { get; set; }
 
     /// <summary>Optional.</summary>
+    [JsonPropertyName("notTrustDomains")]
+    public IList<string>? NotTrustDomains { get; set; }
+
+    /// <summary>Optional.</summary>
     [JsonPropertyName("principals")]
     public IList<string>? Principals { get; set; }
 
@@ -116,6 +120,10 @@ public partial class V1AuthorizationPolicySpecRulesFromSource
     /// <summary>Optional.</summary>
     [JsonPropertyName("serviceAccounts")]
     public IList<string>? ServiceAccounts { get; set; }
+
+    /// <summary>Optional.</summary>
+    [JsonPropertyName("trustDomains")]
+    public IList<string>? TrustDomains { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
